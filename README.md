@@ -53,19 +53,6 @@ Clean, isolated 2D vector character assets rendered directly from the geometric 
 
 </div>
 
-<br/>
-
-<div align="center">
-
-### Detailed Portrait Closeups
-
-| Lord Rama Face & Mukut | Ravana Ten-Headed Crown Crescent |
-| :---: | :---: |
-| <img src="screenshots/closeup_lord_rama_portrait.png" alt="Rama Portrait" width="280"/> | <img src="screenshots/closeup_king_ravana_heads.png" alt="Ravana Heads" width="460"/> |
-| *Serene lotus-petal eye (*Kamala-nayanam*), Vaishnava Urdhva Pundra tilak, sculpted jawline, and iridescent Mayura Pankha.* | *Symmetrical parabolic head arrangement, fierce arched brows, ruby-inlaid crowns, and regal handlebar mustaches.* |
-
-</div>
-
 ---
 
 ## 🏛️ Scenic Temple Architecture
@@ -202,9 +189,7 @@ dussehra-animation/
     ├── 06_festive_fireworks_climax.png
     ├── 07_happy_dussehra_greeting.png
     ├── closeup_lord_rama.png              # Isolated transparent Lord Rama
-    ├── closeup_lord_rama_portrait.png     # Detailed Rama portrait
     ├── closeup_king_ravana.png            # Isolated transparent King Ravana
-    ├── closeup_king_ravana_heads.png      # 10-Headed Ravana crown closeup
     └── isolated_background.png            # Scenic temple backdrop without characters
 ```
 
