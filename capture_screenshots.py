@@ -165,7 +165,33 @@ def capture():
                 print(f"  [+] Saved: {filepath.name} (t={total_time:.2f}s, state={engine.state})")
                 captured.add(name)
 
-    print("Screenshot capture successfully finished!")
+    # Capture Isolated Background (no characters)
+    print("Capturing isolated background...")
+    bg_surf = pygame.Surface((1280, 800))
+    engine.draw_background(bg_surf)
+    bg_path = out_dir / "isolated_background.png"
+    pygame.image.save(bg_surf, str(bg_path))
+    print(f"  [+] Saved: {bg_path.name}")
+
+    # Capture Isolated Lord Rama with Transparent Background
+    print("Capturing Lord Rama closeup (transparent)...")
+    rama_canvas = pygame.Surface((1280, 800), pygame.SRCALPHA)
+    engine.draw_rama(rama_canvas, draw_progress=0.9)
+    rama_crop = rama_canvas.subsurface(pygame.Rect(50, 140, 380, 430))
+    rama_path = out_dir / "closeup_lord_rama.png"
+    pygame.image.save(rama_crop, str(rama_path))
+    print(f"  [+] Saved: {rama_path.name}")
+
+    # Capture Isolated King Ravana with Transparent Background
+    print("Capturing King Ravana closeup (transparent)...")
+    ravana_canvas = pygame.Surface((1280, 800), pygame.SRCALPHA)
+    engine.draw_ravana(ravana_canvas)
+    ravana_crop = ravana_canvas.subsurface(pygame.Rect(720, 110, 520, 460))
+    ravana_path = out_dir / "closeup_king_ravana.png"
+    pygame.image.save(ravana_crop, str(ravana_path))
+    print(f"  [+] Saved: {ravana_path.name}")
+
+    print("All screenshots and character closeups successfully finished!")
 
 if __name__ == "__main__":
     capture()
