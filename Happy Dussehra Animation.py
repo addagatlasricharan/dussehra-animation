@@ -69,7 +69,6 @@ EXECUTION:
 --------------------------------------------------------------------------------
   python "Happy Dussehra Animation.py"           # Runs default Pygame cinematic engine
   python "Happy Dussehra Animation.py" --turtle  # Runs lightweight Turtle/Tkinter engine
-  python happy_dasara.py                         # Convenient alias launcher script
 
 --------------------------------------------------------------------------------
 INTERACTIVE CONTROLS:

@@ -122,17 +122,11 @@ pip install -r requirements.txt
 ### Execution Options
 
 ```bash
-# Run High-Fidelity 60 FPS Pygame Cinematic Engine (Recommended)
-python happy_dasara.py
-
-# Alternatively run using main script
+# Run High-Fidelity 60 FPS Pygame Cinematic Engine (Default)
 python "Happy Dussehra Animation.py"
 
 # Run Lightweight Vector Turtle / Tkinter Engine (Fallback)
-python happy_dasara.py --turtle
-
-# Re-generate all high-resolution documentation screenshots headlessly
-python capture_screenshots.py
+python "Happy Dussehra Animation.py" --turtle
 ```
 
 ---
@@ -174,8 +168,6 @@ Upon hitting the ground rampart ($Y \ge 540$), a localized cracker burst is trig
 ```
 dussehra-animation/
 ├── Happy Dussehra Animation.py  # Primary cinematic dual-engine application
-├── happy_dasara.py              # CLI launcher script (no spaces needed)
-├── capture_screenshots.py       # Automated headless screenshot generator
 ├── requirements.txt             # Project Python dependencies
 ├── .gitignore                   # Git ignore specifications
 ├── LICENSE                      # Open-source MIT License
